@@ -1,0 +1,117 @@
+body{
+    background-image: url("./Images/Ocean Blue.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0px;
+    padding: 0px;
+}
+
+.menu-bar{
+    background-color: black;
+    opacity: 0.5;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 18px;
+    z-index: -999;
+    overflow: hidden;
+}
+
+.apple{
+    height: 15px;
+    width: 15px;
+    padding-left: 15px;
+    padding-top: 1px;
+    float: left;
+}
+
+.finder{
+    height: 15px;
+    width: 15px;
+    padding-left: 20px;
+    padding-top: 1px;
+    font-weight: bold;
+    float: left;
+    color: white;
+    font-size: 80%;
+    font-family: Helvetica, sans-serif;
+}
+
+.file{
+    height: 15px;
+    width: 15px;
+    padding-left: 45px;
+    padding-top: 1px;
+    font-weight: bold;
+    float: left;
+    color: white;
+    font-size: 80%;
+    font-family: Helvetica, sans-serif;
+}
+
+
+.edit{
+    height: 15px;
+    width: 15px;
+    padding-left: 30px;
+    padding-top: 1px;
+    font-weight: bold;
+    float: left;
+    color: white;
+    font-size: 80%;
+    font-family: Helvetica, sans-serif;
+}
+
+.view{
+    height: 15px;
+    width: 15px;
+    padding-left: 30px;
+    padding-top: 1px;
+    font-weight: bold;
+    float: left;
+    color: white;
+    font-size: 80%;
+    font-family: Helvetica, sans-serif;
+}
+
+.go{
+    height: 15px;
+    width: 15px;
+    padding-left: 35px;
+    padding-top: 1px;
+    font-weight: bold;
+    float: left;
+    color: white;
+    font-size: 80%;
+    font-family: Helvetica, sans-serif;
+}
+
+.window{
+    height: 15px;
+    width: 15px;
+    padding-left: 20px;
+    padding-top: 1px;
+    font-weight: bold;
+    float: left;
+    color: white;
+    font-size: 80%;
+    font-family: Helvetica, sans-serif;
+}
+
+.help{
+    height: 15px;
+    width: 15px;
+    padding-left: 55px;
+    padding-top: 1px;
+    font-weight: bold;
+    float: left;
+    color: white;
+    font-size: 80%;
+    font-family: Helvetica, sans-serif;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+}
+
