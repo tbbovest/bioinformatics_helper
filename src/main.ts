@@ -1,5 +1,6 @@
-const date_time = document.getElementsByClassName("date-time");
+const date_time = document.getElementById("date-time");
 
 
 var today = new Date().toLocaleString().replace(",","").replace(/:.. /," ");
 
+date_time!.textContent = today;
