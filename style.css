@@ -1,10 +1,8 @@
 body{
     background-image: url("./Images/Ocean Blue.jpg");
     background-size: cover;
-    background-repeat: no-repeat;
     margin: 0px;
     padding: 0px;
-    height: 100%;
 }
 
 .menu-bar{
@@ -137,10 +135,28 @@ body{
 }
 
 .terminal-back{
-    background-color: gray;
+    background-color: black;
+    opacity: 85%;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 500px;
+    border-radius: 25px;
+    z-index: -999;
+
+}
+
+.buttons{
+    height: 14px;
+    width: 45px;
+    padding-top: 450px;
+    padding-left: 230px;
+    transform: translate(-50%, -50%);
 }
 
 img{
