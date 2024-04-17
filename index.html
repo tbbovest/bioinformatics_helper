@@ -7,7 +7,7 @@
     <link href="./style.css" rel="stylesheet">
 </head>
 <body>
-    <div class="menu-bar"></div>
+    <div class="menu-bar">
         <div class="apple">
             <img src="./Images/apple.png" alt="Apple Logo">
         </div>
@@ -27,11 +27,31 @@
         <div class="wifi">
             <img src="./Images/wifi.png" alt="Wifi">
         </div>
-
-        <div id="terminal-back" class="terminal-back">Terminal</div>
+    </div>
+    <div id="terminal-back" class="terminal-back">
         <div class="buttons">
             <img src="./Images/buttons.png" alt="buttons">
         </div>
+        <div id="terminal-title">Terminal</div>
+        <div id="inner-terminal">
+            <div id="prompt">
+                <img src="./Images/arrow-right-solid.svg" alt="arrow">
+                <div id="prompt2">
+                    <img src="./Images/arrow-right-solid.svg" alt="arrow2">
+                </div>
+            </div>
+            <div id="directory">Desktop
+                <div id="directory2">Desktop</div>
+            </div>
+            <div id="example-command">data.fastq -> analyzed_data
+                <div id="error">'data.fastq -> analyzed_data' is not a recognized command.
+                 Try one of the following<br><br>'ls' to list available tutorials<br>
+                 
+                 </div>
+            </div>
+
+        </div>
+    </div>
 
     <script src="./dist/main.js"></script>
 

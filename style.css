@@ -7,7 +7,7 @@ body{
 
 .menu-bar{
     background-color: black;
-    opacity: 0.5;
+    opacity: .65;
     position: fixed;
     top: 0px;
     width: 100%;
@@ -136,7 +136,7 @@ body{
 
 .terminal-back{
     background-color: black;
-    opacity: 85%;
+    opacity: 75%;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -144,19 +144,81 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 800px;
-    height: 500px;
+    width: 1100px;
+    height: 800px;
     border-radius: 25px;
     z-index: -999;
 
 }
 
 .buttons{
-    height: 14px;
-    width: 45px;
-    padding-top: 450px;
-    padding-left: 230px;
+    height: 2%;
+    width: 4%;
+    padding-top: 1%;
+    padding-right: 93%;
+    min-width: fit-content;
+    position: absolute;
+}
+
+#terminal-title{
+    min-width: fit-content;
+    padding-top: .8%;
+    font-family: Helvetica, sans-serif;
+}
+
+#inner-terminal{
+    position: absolute;
+    background-color: black;
+    display: flex;
+    top: 52%;
+    left: 50%;
     transform: translate(-50%, -50%);
+    width: 1100px;
+    height: 770px;
+    border-radius: 25px;
+    z-index: 999;
+}
+
+#prompt{
+    height: 3%;
+    width: 3%;
+    padding-top: 1%;
+    padding-left: .5%;
+    min-width: fit-content;
+    min-height: fit-content;
+}
+
+#directory{
+    min-width: fit-content;
+    height: 1%;
+    font-family: Helvetica, sans-serif;
+    padding-top: 1.2%;
+}
+
+#example-command{
+    min-width: fit-content;
+    min-height: fit-content;
+    padding-left: 2%;
+    padding-top: 1.2%;
+    color: gray;
+    font-family: Helvetica, sans-serif;
+}
+
+#prompt2{
+    height: 100%;
+    width: 100%;
+}
+
+#directory2{
+    min-width: fit-content;
+    padding-top: 15%;
+}
+
+#error{
+    min-width: fit-content;
+    min-height: fit-content;
+    padding-top: 1.5%;
+    color: red;
 }
 
 img{
