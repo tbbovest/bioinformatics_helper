@@ -221,6 +221,34 @@ body{
     color: red;
 }
 
+#prompt3{
+    height: 100%;
+    width: 100%;
+    padding-top: 250%;
+}
+
+#directory3{
+    min-width: fit-content;
+    padding-top: 138%;
+}
+
+input{
+    width: 150%;
+    margin-top: 2%;
+    color: gray;
+    font-family: Helvetica, sans-serif;
+    resize: none;
+    font-weight: bold;
+    font-size: 12pt;
+}
+
+#command{
+    background-color: transparent;
+    border-color: transparent;
+    outline: transparent;
+    font-family: Helvetica, sans-serif;
+}
+
 img{
     height: 100%;
     width: 100%;
