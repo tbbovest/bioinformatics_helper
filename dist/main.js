@@ -1,8 +1,49 @@
 "use strict";
-const date_time = document.getElementById("date-time");
+let date_time = document.getElementById('date-time');
 var today = new Date().toLocaleString().replace(",", "").replace(/:.. /, " ");
-document.getElementById('terminal-back').style.color = "White";
-document.getElementById('terminal-back').style.font = "Helvetica, sans-serif";
-document.getElementById('terminal-back').style.fontWeight = "600";
-//document.getElementById('terminal-back')!.style.letterSpacing = "1px";
 date_time.textContent = today;
+function addToTerminal(text) {
+    const terminal = document.getElementById('inner-terminal');
+    const newLine = document.createElement('div');
+    newLine.textContent = text;
+    terminal.appendChild(newLine);
+}
+// Function to handle user input
+function handleInput() {
+    const input = document.getElementById('command');
+    const command = document.getElementById('command').value.trim();
+    // Add command to terminal
+    addToTerminal('> ' + command);
+    // Available commands
+    if (command === 'help') {
+        addToTerminal('Available commands:');
+        addToTerminal('- help: Display available commands');
+        addToTerminal('- date: Display current date');
+        addToTerminal('- clear: Clear the terminal');
+    }
+    else if (command === 'date') {
+        const currentDate = new Date().toLocaleString();
+        addToTerminal(currentDate);
+    }
+    else if (command === 'clear') {
+        const terminal = document.getElementById('inner-terminal');
+        terminal.innerHTML = '';
+    }
+    else {
+        addToTerminal('Command not found: ' + command);
+    }
+    document.getElementById('command').value = '';
+    input.focus();
+}
+// Event listener for handling user input
+const input = document.getElementById('command');
+input.addEventListener('keydown', function (event) {
+    if (event.key === 'Enter') {
+        event.preventDefault(); // Prevent default form submission behavior
+        handleInput(); // Handle user input
+    }
+});
+// Set focus to the input field when the page loads
+window.onload = function () {
+    input.focus();
+};

@@ -169,7 +169,6 @@ body{
 #inner-terminal{
     position: absolute;
     background-color: black;
-    display: flex;
     top: 52%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -177,22 +176,6 @@ body{
     height: 770px;
     border-radius: 25px;
     z-index: 999;
-}
-
-#prompt{
-    height: 3%;
-    width: 3%;
-    padding-top: 1%;
-    padding-left: .5%;
-    min-width: fit-content;
-    min-height: fit-content;
-}
-
-#directory{
-    min-width: fit-content;
-    height: 1%;
-    font-family: Helvetica, sans-serif;
-    padding-top: 1.2%;
 }
 
 #example-command{
@@ -204,32 +187,11 @@ body{
     font-family: Helvetica, sans-serif;
 }
 
-#prompt2{
-    height: 100%;
-    width: 100%;
-}
-
-#directory2{
-    min-width: fit-content;
-    padding-top: 15%;
-}
-
 #error{
     min-width: fit-content;
     min-height: fit-content;
     padding-top: 1.5%;
     color: red;
-}
-
-#prompt3{
-    height: 100%;
-    width: 100%;
-    padding-top: 250%;
-}
-
-#directory3{
-    min-width: fit-content;
-    padding-top: 138%;
 }
 
 input{
