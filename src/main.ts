@@ -7,30 +7,30 @@ date_time!.textContent = today;
 function addToTerminal(text) {
             const terminal = document.getElementById('inner-terminal');
             const newLine = document.createElement('div');
-            newLine.textContent = text;
+            newLine.className = 'new-lines';
+            newLine.textContent = (text);
             terminal!.appendChild(newLine);
         }
 
         // Function to handle user input
         function handleInput() {
             const input = document.getElementById('command');
-            const command =  (<HTMLInputElement>document.getElementById('command')).value.trim();
-            // Add command to terminal
-            addToTerminal('> ' + command);
-
-            // Available commands
-            if (command === 'help') {
+            const command =  (<HTMLInputElement>document.getElementById('command')).value.trim();           
+            
+            if (command == 'help') {
+                addToTerminal('guestuser@server ~ $ ');
                 addToTerminal('Available commands:');
                 addToTerminal('- help: Display available commands');
                 addToTerminal('- date: Display current date');
                 addToTerminal('- clear: Clear the terminal');
-            } else if (command === 'date') {
-                const currentDate = new Date().toLocaleString();
-                addToTerminal(currentDate);
-            } else if (command === 'clear') {
+            } else if (command == '') {
+                addToTerminal('guestuser@server ~ $ ');
+            } else if (command == 'clear') {
                 const terminal = document.getElementById('inner-terminal');
                 terminal!.innerHTML = '';
+                addToTerminal('guestuser@server ~ $ ');
             } else {
+                addToTerminal('guestuser@server ~ $ ' + command);
                 addToTerminal('Command not found: ' + command);
             }
 
@@ -42,8 +42,8 @@ function addToTerminal(text) {
         const input = document.getElementById('command');
         input!.addEventListener('keydown', function(event) {
             if (event.key === 'Enter') {
-                event.preventDefault(); // Prevent default form submission behavior
-                handleInput(); // Handle user input
+                event.preventDefault();
+                handleInput();
             }
         });
 

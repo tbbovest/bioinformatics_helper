@@ -211,6 +211,13 @@ input{
     font-family: Helvetica, sans-serif;
 }
 
+.new-lines{
+    color: white;
+    min-width: fit-content;
+    min-height: fit-content;
+    font-family:  A Std, monospace;
+}
+
 img{
     height: 100%;
     width: 100%;
