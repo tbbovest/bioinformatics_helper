@@ -185,33 +185,49 @@ body{
     font-family: Courier, monospace;
     font-weight: bold;
     padding-top: 1%;
+    font-size: 110%;
 }
 
-#firstoption{
-    background-color: gray;
-    color: red;
+.button1{
+    background-color: transparent;
+    color: cyan;
     font-family: Courier, monospace;
     font-weight: bolder;
-    font-size: 200%;
-    width: 70%;
-    margin-left: 5%;
-    margin-top: 2%;
-    height: 5%;
-    margin-bottom: 2%;
+    font-size: 30px;
     text-align: center;
-    border-radius: 25px;
+    transition-duration: 0.4s;
+    border-radius: 15px;
+    border-color: cyan;
+    margin-left: 18%;
+    margin-top: 1%;
 }
 
-#secondoption{
-    background-color: green;
+.button1:hover{
+    background-color: gray;
+    color: cyan;
+    cursor: pointer;
+}
+
+.button2{
+    background-color: transparent;
+    color: lightgreen;
     font-family: Courier, monospace;
     font-weight: bolder;
-    font-size: 200%;
-    width: 30%;
-    margin-left: 5%;
-    height: 5%;
-
+    font-size: 30px;
+    text-align: center;
+    transition-duration: 0.4s;
+    border-radius: 15px;
+    border-color: lightgreen;
+    margin-left: 18%;
+    margin-top: 1%;
 }
+
+.button2:hover{
+    background-color: gray;
+    color: lightgreen;
+    cursor: pointer;
+}
+
 
 img{
     height: 100%;
