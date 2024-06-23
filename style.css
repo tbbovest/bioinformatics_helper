@@ -188,7 +188,7 @@ body{
     font-size: 110%;
 }
 
-.button1{
+#firstoption{
     background-color: transparent;
     color: cyan;
     font-family: Courier, monospace;
@@ -202,13 +202,13 @@ body{
     margin-top: 1%;
 }
 
-.button1:hover{
+#firstoption:hover{
     background-color: gray;
     color: cyan;
     cursor: pointer;
 }
 
-.button2{
+#secoption{
     background-color: transparent;
     color: lightgreen;
     font-family: Courier, monospace;
@@ -222,7 +222,7 @@ body{
     margin-top: 1%;
 }
 
-.button2:hover{
+#secoption:hover{
     background-color: gray;
     color: lightgreen;
     cursor: pointer;
